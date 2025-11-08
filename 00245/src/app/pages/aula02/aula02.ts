@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { calcularArea, exibirMensagem, somarNumeros, verificarParidade } from './funcoes';
-import { exercicioArrays2 } from './exercicios_aula02';
+import { exercicioArrays2, exercicioCombinacao2, exercicioFuncoes2 } from './exercicios_aula02';
 
 @Component({
   selector: 'app-aula02',
@@ -18,6 +18,8 @@ export class aula02 implements OnInit {
     this.exemploFuncoes();
     this.exercicios();
     exercicioArrays2();
+    exercicioFuncoes2();
+    exercicioCombinacao2();
   }
 
   // ==========================================================

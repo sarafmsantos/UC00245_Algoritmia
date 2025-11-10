@@ -196,14 +196,26 @@ export class aula02 implements OnInit {
   exemploFuncoes(): void {
     console.log('--- Exemplo: Funções com Parâmetros e Retornos ---');
  
-    console.log('Área:', calcularArea(5, 3));
+    function calcularArea(largura: number, altura: number): number {
+      return largura * altura;
+    } 
+    let area = calcularArea(5, 3);
+    console.log("Área: " + area); // 15
  
-    console.log('Soma total:', somarNumeros([10, 20, 30, 40]));
+    function somarNumeros(numeros: number[]): number {
+      let soma = 0;
+      for (let i = 0; i < numeros.length; i++) {
+        soma += numeros[i];
+      }
+      return soma;
+    }
+    let total = somarNumeros([10, 20, 30, 40]);
+    console.log("Soma total: " + total); // 100
  
-    console.log('4 é', verificarParidade(4));
-    console.log('7 é', verificarParidade(7));
- 
-    exibirMensagem('Bem-vindo ao TypeScript!');
+    function exibirMensagem(mensagem: string): void {
+      console.log("Mensagem: " + mensagem);
+    }
+    exibirMensagem("Bem-vindo ao TypeScript!");
   }
 
     exercicios = () => {

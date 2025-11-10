@@ -1,5 +1,4 @@
 
-
 export function exercicioArrays2(): void {
     console.log('--- Exercícios: Arrays ---');
 
@@ -61,7 +60,7 @@ export function exercicioFuncoes2(): void {
     console.log('3️⃣ Crie uma função que receba um nome e exiba uma saudação personalizada.');
 
     function saudacao(nome: string): void {
-      console.log('Olá, ${nome}! Bem-vindo/a!');
+      console.log('Olá,', nome, '! Bem-vindo/a!');
     }
     saudacao('Tony');
    }
